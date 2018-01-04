@@ -1,18 +1,128 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Avanade Angular Academy by Gama - Simulado #1</title>
-	<meta charset="utf-8">
+﻿<!DOCTYPE html>
+<html class="no-ie js flexbox flexboxlegacy no-touch rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<head>
+    <title>Avanade Angular Academy by Gama - Simulado #1</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:900" rel="stylesheet">
 </head>
+
 <body>
-<main role="main" id="main"></main>
-<script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <!-- main -->
+    <main role="main" id="main">
+        <!-- header -->
+        <div class="jumbotron jumbotron-fluid header text-center">
+            <!-- container -->
+            <div class="container">
+                <!-- title -->
+                <h1>DÊ PROPOSITO PARA SEU CÓDIGO</h1>
+                <!-- subtitle -->
+                <h5>Cansado de desenvolver projetos sem sentido? <wbr/> Participe do Avanade Angular <wbr /> Academy</h5>
+                <!-- button - (id: btn-apply-form -->
+                <button class="btn btn-lg btn-success" id="btn-apply-form" data-toggle="modal" data-target="#apply-modal">Inscreva-se</button>
+            </div>
+        </div>
+        <!-- container - body -->
+        <div class="container-fluid">
+            <!-- row - body -->
+            <div class="row align-items-start body-info">
+                <!-- column - info 1 -->
+                <div class="col-xs-12 col-sm-3 info1">
+                    <h5> Inscrições </h5>
+                    <h6>02/dez a 04/jan</h6>
+                    <p>Para se inscrever basta preencher o formulário e se preparar para o nosso teste técnico com cursos online
+                        e simulados.</p>
+                </div>
+                <!-- column - info 2 -->
+                <div class="col-xs-12 col-sm-3 info2">
+                    <h5> Teste Técnico </h5>
+                    <h6>05/jan e 06/jan</h6>
+                    <p>Em seguida, prove que você está preparado fazendo os testes técnicos totalmente mão na massa</p>
+                </div>
+                <!-- column - info 3 -->
+                <div class="col-xs-12 col-sm-3 info3">
+                    <h5> Seleção e Contratação </h5>
+                    <h6>07/jan e 14/jan</h6>
+                    <p>Os melhores candidatos serão entrevistados e contratados pela Avanade</p>
+                </div>
+                <!-- column - info 4 -->
+                <div class="col-xs-12 col-sm-3 info4">
+                    <h5> Treinamento </h5>
+                    <h6>15/jan e 26/jan</h6>
+                    <p>Serão duas semanas de treinamento super hands-on com os melhores devs do mercado.</p>
+                </div>
+            </div>
+
+    </main>
+
+    <!-- modal (id: apply-modal) -->
+    <div class="modal modal-lg fade" id="apply-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <!-- modal - header -->
+                <div class="modal-header">
+                    <h5 class="modal-title">Formulário de Inscrição</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="needs-validation" novalidate>
+                        <div class="form-row">
+                            <!-- form name (id:name) -->
+                            <div class="col-md-4 mb-3">
+                                <label for="name">Nome</label>
+                                <input type="text" class="form-control" id="name" placeholder="Nome Completo" required>
+                                <div class="invalid-feedback">
+                                    Por favor, insira seu nome.
+                                </div>
+                            </div>
+                            <!-- form e-mail (id:email) -->
+                            <div class="col-md-4 mb-3">
+                                <label for="email">E-mail</label>
+                                <input type="email" class="form-control" id="email" placeholder="E-mail" aria-describedby="inputGroupPrepend" required>
+                                <div class="invalid-feedback">
+                                    Por favor, insira seu e-mail.
+                                </div>
+                            </div>
+                            <!-- primary button - submit (id:btn-apply) -->
+                            <button class="btn btn-primary" id="btn-apply" type="submit" >Enviar</button>
+                            <!-- secondary button - close -->
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        </div>
+                    </form>
+                </div>
+                <!-- modal - footer -->
+                <div class="modal-footer" id="modalFooter">
+                    <!-- success alert (id: apply-success) -->
+                    <div class="alert alert-success alert-dismissible apply-success collapse" id="apply-success" role="alert"> 
+                        Enviado com sucesso!
+                        <button class="close" data-dismiss="alert">&times;</button>
+                    </div>
+                    <!-- danger alert (id:apply-error) -->
+                    <div class="alert alert-danger alert-dismissible apply-error collapse" id="apply-error" aria-hidden="true" role="alert">
+                        Por favor, corrija os campos com erro!
+                        <button class="close" data-dismiss="alert">&times;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
+
 </body>
+
 </html>

@@ -1,0 +1,219 @@
+﻿/*body
+{
+    background-color: #000;
+    max-height: 600px;
+    max-width: 800px;
+    margin: 0px;
+    border:0px;
+}
+
+.container-fluid
+{
+    width:100vw;
+    height:60vh;
+}
+
+.header-info {
+    background-color: white;
+    justify-content: center;
+    overflow: hidden;
+    width: auto;
+    height: 400px;
+    padding: 0px;
+}
+
+#bg {
+    background-image: url(img/background-main.jpg);
+    display: inline-block;
+    background-position: left;
+    background-size: initial;
+    width: auto;
+    height: 400px;
+    float: left;
+    background-repeat: no-repeat;
+    border: 10px;
+}
+
+.header-1 h1 {
+    font-family: Montserrat;
+    font-weight: 900;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    margin: 1% 0%;
+    box-sizing: border-box;
+    flex: auto;
+    transform: translate(0%,60%);
+    padding: 2% 0%;
+}
+
+.header-2 h5 {
+    font-family: Montserrat;
+    font-weight: 400;
+    transform: translate(0%,70%);
+    color: #fff;
+    text-align: center;
+    padding: 1% 0%;
+    margin: 1% 0%;
+    position: relative;
+}
+
+.botao {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transform: translate(0%,80%);
+    margin: 1% 0%;
+}
+
+
+.body-info {
+    justify-content: center;
+    overflow: hidden;
+    padding: 0px;
+    width: 800px;
+    height: 200px;
+}
+
+.b-info {
+    padding: 1%;
+    background-color: white;
+}
+
+
+
+.info1 {
+    width: 25%;
+    height: 200px;
+    float: left;
+    background-color: #FFFFFF;
+    font-family: Arial, 'Montserrat', sans-serif;
+    padding: 1%;
+}
+
+    .info1 h5 {
+        font-size: medium;
+        font-weight: 900;
+        text-align: center;
+    }
+
+    .info1 h6 {
+        font-size:small;
+        font-weight: 700;
+        text-align: center;
+    }
+
+.info1 p {
+    font-size: smaller
+}
+
+.info2 {
+    width: 25%;
+    height: 200px;
+    float: left;
+    background-color: #FFFFFF;
+    font-family: Arial, 'Montserrat', sans-serif;
+    padding: 1%;
+}
+
+    .info2 h5 {
+        font-size: medium;
+        font-weight: 900;
+        text-align: center;
+    }
+
+    .info2 h6 {
+        font-size: small;
+        font-weight: 700;
+        text-align: center;
+    }
+
+.info2 p {
+    font-size: smaller
+}
+
+.info3 {
+    width: 25%;
+    height: 200px;
+    float: left;
+    background-color: #ffFFFF;
+    font-family: Arial, 'Montserrat', sans-serif;
+    padding: 1%;
+}
+
+    .info3 h5 {
+        font-size: medium;
+        font-weight: 900;
+        text-align: center;
+    }
+
+    .info3 h6 {
+        font-size: small;
+        font-weight: 700;
+        text-align: center;
+    }
+
+.info3 p {
+    font-size: smaller
+}
+
+.info4 {
+    width: 25%;
+    height: 200px;
+    float: left;
+    background-color: #FFFFFF;
+    font-family: Arial, 'Montserrat', sans-serif;
+    padding: 1%;
+}
+
+    .info4 h5 {
+        font-size: medium;
+        font-weight: 900;
+        text-align: center;
+    }
+
+    .info4 h6 {
+        font-size: small;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .info4 p{
+        font-size:smaller
+    }*/
+
+    /* Aditivo */
+
+    .header {
+        position: relative;
+        background: #000 url("img/background-main.jpg") center center;
+        overflow: hidden;
+        background-position: left;
+        background-size: initial;
+        color: #fff;
+        text-align: center;
+    }
+
+    .header h1 {
+        font-family: Montserrat;
+        font-weight: 900;
+    }
+
+    .header h5 {
+        margin-bottom: 15px;
+        font-weight: 100;
+    }
+
+    .body-info h5,
+    .body-info h6 {
+        text-align: center;
+    }
+
+    #apply-modal #apply-success,
+    #apply-modal #apply-failure {
+        display: none;
+    }
+
+    #apply-modal .post-success #apply-success {
+        display: block;
+    }
